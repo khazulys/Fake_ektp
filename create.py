@@ -11,7 +11,7 @@ tmp=Image.open("src/Template.png")
 # open second image for pas photo
 pas_photo=Image.open(data["pas_photo"])
 # Font list
-font=["Arrial.ttf", "Sign.ttf","Ocr.ttf"]
+font=["font/Arrial.ttf", "font/Sign.ttf","font/Ocr.ttf"]
 # Font for provinsi
 fprov=ImageFont.truetype(font[0], size[0])
 # Font for NIK
