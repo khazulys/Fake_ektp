@@ -7,7 +7,7 @@ size=[25,32,16,40]
 f=open("data.json")
 data=json.load(f)
 # open template
-tmp=Image.open("Template.png")
+tmp=Image.open("src/Template.png")
 # open second image for pas photo
 pas_photo=Image.open(data["pas_photo"])
 # Font list
@@ -53,4 +53,4 @@ write.text((190,390), data["masa_berlaku"].upper(), fill=("black"), font=fdata, 
 write.text((553,340), f"KOTA {data['kota'].upper()}", fill=("black"), font=fdata, anchor="lt")
 write.text((570,360), data["terbuat"], fill=("black"), font=fdata, anchor="lt")
 write.text((540,395), sign, fill=("black"), font=fsign, anchor="lt")
-tmp.save("test.png", quality=95)
+tmp.save("src/result.png", quality=95)
